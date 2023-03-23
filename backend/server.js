@@ -14,7 +14,7 @@ import messageRouter from "./routes/message.js";
 const app = express();
 dotenv.config();
 app.use(express.json());
-app.use(cors({ origin: "https://showcazz.netlify.app/", credentials: true }));
+app.use(cors({ origin: "https://showcazz.netlify.app", credentials: true }));
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use((err, req, res, next) => {
